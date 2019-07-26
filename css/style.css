@@ -73,6 +73,7 @@ h1
     display: flex;
     align-items: center;
     padding: 0 20px;
+    font-size: 1em;
 }
 
 .menu .menu-items:last-child
@@ -183,9 +184,9 @@ h1
 {
     text-transform: uppercase;
     color: #026fff;
-    font-size: 26px;
+    font-size: 1.5em;
     margin: 0;
-    padding: 40px 0;
+    padding: 1em 0;
     display: flex;
     align-items: center;
 }
@@ -322,16 +323,16 @@ h1
 .jobs-title
 {
     font-family: 'Fjalla One', sans-serif;
-    font-size: 24px;
     color: #1d252c;
     margin: 0;
     padding: 30px;
+    font-size: 1.5em;
 }
 
 .jobs-description
 {
     color: #6d6d6d;
-    font-size: 18px;
+    font-size: 1em;
     text-align: left;
     margin: 0;
     margin-bottom: 20px;
@@ -344,7 +345,7 @@ h1
     color: #026fff;
     border: 1px solid;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 1em;
     text-decoration: none;
     display: inline-block;
 }
@@ -439,7 +440,7 @@ h1
 {
     text-transform: uppercase;
     color: #fff;
-    font-size: 26px;
+    font-size: 1.62em;
     margin: 0;
     padding: 40px 0 0;
     /* display: inline-block; */
@@ -468,7 +469,7 @@ h1
     background-position-x: 10px;
     background-position-y: center;
     color: #6d6d6d;
-    font-size: 18px;
+    font-size: 1.15em;
     border-radius: 5px;
     padding: 10px 10px 10px 45px;
     margin-bottom: 10px;
@@ -480,7 +481,7 @@ h1
     border: 1px solid;
     background-color: transparent;
     padding: 10px 30px;
-    font-size: 18px;
+    font-size: 1.15em;
     flex-shrink: 0;
     border-radius: 5px;
     width: 170px;
@@ -586,7 +587,6 @@ h1
     .menu-link
     {
         padding: 0 10px;
-        /* font-size: 14px; */
     }
     .menu .menu-items:last-child .menu-link
     {
@@ -631,7 +631,6 @@ h1
     {
         width: 100%;
         height: auto;
-        object-fit: contain;
     }
     .leo-skills-left [class*="row-"] span
     {
@@ -666,5 +665,162 @@ h1
     .hero-img
     {
         height: 500px;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .header figure
+    {
+        width: 200px;
+    }
+    .hero h1
+    {
+        font-size: 35px;
+    }
+    .project
+    {
+        align-items: center;
+    }
+    .menu,
+    .portafolio,
+    .experience,
+    .project,
+    .jobs,
+    .leo-skills-left [class*="row-"],
+    .leo-skills-right [class*="row-"],
+    .contact-title,
+    .contact form
+    {
+        font-size: 14px;
+    }
+    .jobs-title
+    {
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .project
+    {
+        flex-direction: column;
+    }
+    .project .project-details,
+    .project figure
+    {
+        width: auto;
+    }
+    .jobs
+    {
+        width: 100%;
+    }
+    .jobs img
+    {
+        height: 300px;
+    }
+    .leo-skills-right
+    {
+        align-items: flex-start;
+    }
+    .leo-skills-left
+    {
+        align-items: flex-end
+    }
+    .leo-skills-left [class*="row-"],
+    .leo-skills-right [class*="row-"]
+    {
+        font-size: 12px;
+    }
+    .footer
+    {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:700px)
+{
+    .leo-skills
+    {
+        height: 50vh;
+        position: relative;
+    }
+    .leo-skills-left
+    {
+        display: none;
+    }
+    .leo-skills-right
+    {
+        width: 100%;
+        position: relative;
+        align-items: initial;
+    }
+    .leo-skills-right div:nth-child(2)
+    {
+        justify-content: flex-start;
+        margin-left: 10%;
+    }
+    .leo-skills-right div:nth-child(6)
+    {
+        justify-content: flex-end;
+        margin-right:10%;
+    }
+    .leo-skills figure
+    {
+        width: auto;
+    }
+    .leo-img
+    {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        bottom: 0;
+    }
+    .contact
+    {
+        flex-direction: column;
+    }
+    .contact-left,
+    .contact-right
+    {
+        width: 100%;
+    }
+    .contact input[type=submit]
+    {
+        align-self: center;
+    }
+    .contact-right
+    {
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+    .contact-right a:first-child
+    {
+        margin: 0;
+    }
+    .contact form
+    {
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width:650px)
+{
+    .hero
+    {
+        position: relative;
+    }
+    .hero h1
+    {
+        position: absolute;
+        z-index: 1;
+        background: rgba(0,0,0, .8);
+        padding: 10px;
+        border-radius: 5px;
+        margin-left: 40px;
+    }
+    .hero-img
+    {
+        clip-path: initial;
     }
 }
