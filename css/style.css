@@ -127,7 +127,7 @@ h1
 
 .menu-icono
 {
-    display: inline-block;
+    display: none;
     width: 40px;
     height: 40px;
     font-size: 20px;
@@ -903,13 +903,17 @@ h1
         position: inherit;
         width: 50%;
         bottom: 0;
-        left: -50vw;
+        left: -60vw;
         box-shadow: -2px 7px 18px 0px rgba(0,0,0,1);
         transition: .3s;
     }
     .menu.is-active
     {
         left: 0;
+    }
+    .menu-icono
+    {
+        display: inline-block;
     }
     .menu ul
     {
@@ -932,6 +936,10 @@ h1
     {
         margin: 0 20px 30px 20px;
     }
+    .experience
+    {
+        height: fit-content;
+    }
     .portafolio,
     .experience,
     .project,
@@ -949,11 +957,52 @@ h1
     .contact-links.github,
     .contact-links.instagram
     {
+        width: 25px;
+        height: 25px;
         background-size: 25px;
         background-repeat: no-repeat;
     }
     .footer-img
     {
         height: 25px;
+    }
+}
+@media screen and (max-width: 320px)
+{
+    .punto
+    {
+        height: 20px;
+        width: 40px;
+        margin-left: -25px;
+        margin-right: 10px;
+    }
+    .hero h1
+    {
+        font-size: 20px;
+    }
+    .section-title,
+    .contact .section-title
+    {
+        font-size: 1.3em;
+    }
+    .jobs img
+    {
+        height: 200px;
+    }
+    .portafolio,
+    .experience,
+    .project,
+    .jobs,
+    .leo-skills-left [class*="row-"],
+    .leo-skills-right [class*="row-"],
+    .contact-title,
+    .contact form,
+    .footer p
+    {
+        font-size: 12px;
+    }
+    .footer div
+    {
+        text-align: center;
     }
 }
