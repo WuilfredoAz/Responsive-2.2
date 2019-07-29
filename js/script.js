@@ -45,3 +45,8 @@ function hideShow()
 }
 
 hideShow(mobile);
+
+//añadimos el lazy loading a las imagenes
+var bLazy = new Blazy({
+    selector: 'img'
+});
