@@ -123,6 +123,7 @@ h1
     border-radius: 5px;
     padding: 10px 30px;
     margin-left: 20px;
+    text-align: center;
 }
 
 .menu-icono
@@ -615,6 +616,11 @@ h1
     color: #fff;
 }
 
+.red
+{
+    color: red;
+}
+
 @media screen and (max-width: 1024px)
 {
     .header
@@ -706,15 +712,12 @@ h1
         margin-left: 30px;
     }
 }
-@media screen and (max-width: 800px)
+@media screen and (max-width: 768px)
 {
     .hero-img
     {
-        height: 85vh;
+        height: 50vh;
     }
-}
-@media screen and (max-width: 768px)
-{
     .header figure
     {
         width: 200px;
@@ -746,6 +749,14 @@ h1
 }
 @media screen and (max-width: 767px)
 {
+    .hero-img
+    {
+        height: 85vh;
+    }
+    .hero h1
+    {
+        font-size: 30px;
+    }
     .project
     {
         flex-direction: column;
@@ -927,9 +938,9 @@ h1
     {
         height: initial;
     }
-    .hero h1
+    .menu .menu-items:last-child .menu-link
     {
-        font-size: 30px;
+        margin: 0;
     }
     .project,
     .container-jobs
@@ -966,16 +977,31 @@ h1
     {
         height: 25px;
     }
+    .footer div
+    {
+        text-align: center;
+    }
+    .punto {
+        height: 30px;
+        width: 60px;
+        margin-left: -30px;
+        margin-right: 15px;
+        position: relative;
+        left: -5px;
+    }
 }
 @media screen and (max-width: 320px)
 {
-    .punto
+    /* .punto
     {
         height: 20px;
         width: 40px;
         margin-left: -25px;
         margin-right: 10px;
-    }
+    } */
+
+
+
     .hero h1
     {
         font-size: 20px;
@@ -1000,9 +1026,5 @@ h1
     .footer p
     {
         font-size: 12px;
-    }
-    .footer div
-    {
-        text-align: center;
     }
 }
