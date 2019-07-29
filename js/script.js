@@ -50,3 +50,31 @@ hideShow(mobile);
 var bLazy = new Blazy({
     selector: 'img'
 });
+
+//Activamos los gestos
+
+//Colocamos en una variable a quien queremos que este pendiente de los gestos
+const body = document.body;
+
+//cremos una variable para pasar por parametros a el body a la libreria
+const gestos = new Hammer(body);
+
+//colocamos un escuchador de eventos de HammerJS para cuando haga swipe a la derecha y muestre el menu
+gestos.on("swiperight", muestrame);
+
+//colacamos un escuchador de eventos de HammerJS para cuando haga swipe a la izquierda y oculte el menu
+gestos.on("swipeleft", ocultame);
+
+//creamos la funcion para mostrar el menu
+function muestrame()
+{
+    menu.classList.add("is-active");
+    burguerButtom.classList.add("icon-cancel-circle");
+}
+
+//creamos la funcion para ocultar el menu
+function ocultame()
+{
+    menu.classList.remove("is-active");
+    burguerButtom.classList.remove("icon-cancel-circle");
+}
