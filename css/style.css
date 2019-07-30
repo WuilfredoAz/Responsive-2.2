@@ -1,3 +1,39 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?rypntt');
+    src:  url('../fonts/icomoon.eot?rypntt#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?rypntt') format('truetype'),
+      url('../fonts/icomoon.woff?rypntt') format('woff'),
+      url('../fonts/icomoon.svg?rypntt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  .icon-cancel-circle:before {
+    content: "\ea0d";
+  }
+  .icon-cancel:before {
+    content: "\ea0f";
+  }
+
 body
 {
     margin: 0;
@@ -50,7 +86,7 @@ h1
     height: inherit;
 }
 
-.menu ul 
+.menu ul
 {
     height: inherit;
     margin: 0;
@@ -73,6 +109,7 @@ h1
     display: flex;
     align-items: center;
     padding: 0 20px;
+    font-size: 1em;
 }
 
 .menu .menu-items:last-child
@@ -86,6 +123,17 @@ h1
     border-radius: 5px;
     padding: 10px 30px;
     margin-left: 20px;
+    text-align: center;
+}
+
+.menu-icono
+{
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
 }
 
 .hero
@@ -97,7 +145,7 @@ h1
     overflow: hidden;
 }
 
-.hero h1 
+.hero h1
 {
     color: #fff;
     margin: 0;
@@ -163,7 +211,6 @@ h1
     {
         opacity: 1;
         /* transform: translateY(15px); */
-        
     }
     100%
     {
@@ -184,9 +231,9 @@ h1
 {
     text-transform: uppercase;
     color: #026fff;
-    font-size: 26px;
+    font-size: 1.5em;
     margin: 0;
-    padding: 40px 0;
+    padding: 1em 0;
     display: flex;
     align-items: center;
 }
@@ -220,7 +267,7 @@ h1
 .project-title
 {
     font-family: 'Fjalla One', sans-serif;
-    font-size: 32px;
+    font-size: 2em;
     color: #1d252c;
     margin:0;
 }
@@ -230,13 +277,14 @@ h1
     color: #6d6d6d;
     margin: 0;
     padding: 10px 0;
+    font-size: 1em;
 }
 
 .project-data
 {
     font-family: 'Fjalla One', sans-serif;
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 1em;
     margin: 0;
     padding: 10px 0;
 }
@@ -245,12 +293,12 @@ h1
 {
     color: #6d6d6d;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .project-description
 {
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
 .project figure
@@ -275,7 +323,7 @@ h1
 {
     margin:0 40px 0 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -284,7 +332,7 @@ h1
     background-color:#f4fbff;
     overflow: hidden;
     border-radius: 5px;
-    width: 500px;
+    width: 48%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -306,7 +354,7 @@ h1
 .jobs-img
 {
     height: 250px;
-    width: 500px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -315,23 +363,23 @@ h1
     background-color: #fff;
     text-align: center;
     padding: 20px;
-    width: 350px;
+    width: 70%;
     margin: -75px 75px 30px;
 }
 
 .jobs-title
 {
     font-family: 'Fjalla One', sans-serif;
-    font-size: 24px;
     color: #1d252c;
     margin: 0;
     padding: 30px;
+    font-size: 1.5em;
 }
 
 .jobs-description
 {
     color: #6d6d6d;
-    font-size: 18px;
+    font-size: 1em;
     text-align: left;
     margin: 0;
     margin-bottom: 20px;
@@ -344,7 +392,7 @@ h1
     color: #026fff;
     border: 1px solid;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 1em;
     text-decoration: none;
     display: inline-block;
 }
@@ -352,7 +400,7 @@ h1
 .leo-skills
 {
     display: flex;
-    justify-content:space-evenly; 
+    justify-content:space-evenly;
 }
 
 .leo-skills-left,
@@ -369,7 +417,7 @@ h1
     height: auto;
     width: auto;
     padding: 5px 20px;
-    margin: 0 40px;
+    margin: 0 20px;
     color: #fff;
     background-color: #026fff;
     border-radius: 20px;
@@ -439,7 +487,7 @@ h1
 {
     text-transform: uppercase;
     color: #fff;
-    font-size: 26px;
+    font-size: 1.62em;
     margin: 0;
     padding: 40px 0 0;
     /* display: inline-block; */
@@ -468,7 +516,7 @@ h1
     background-position-x: 10px;
     background-position-y: center;
     color: #6d6d6d;
-    font-size: 18px;
+    font-size: 1.15em;
     border-radius: 5px;
     padding: 10px 10px 10px 45px;
     margin-bottom: 10px;
@@ -480,7 +528,7 @@ h1
     border: 1px solid;
     background-color: transparent;
     padding: 10px 30px;
-    font-size: 18px;
+    font-size: 1.15em;
     flex-shrink: 0;
     border-radius: 5px;
     width: 170px;
@@ -566,4 +614,417 @@ h1
 .footer a
 {
     color: #fff;
+}
+
+.red
+{
+    color: red;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .header
+    {
+        align-items: center;
+    }
+    .header figure
+    {
+        height: auto;
+        width: 250px;
+    }
+    .logo
+    {
+        width: 100%;
+    }
+    .menu-link
+    {
+        padding: 0 10px;
+    }
+    .menu .menu-items:last-child .menu-link
+    {
+        padding: 10px;
+        margin-left: 10px;
+    }
+    .hero h1
+    {
+        font-size: 40px;
+    }
+    .project-details,
+    .project figure
+    {
+        width: 50%;
+    }
+    .project-img
+    {
+        width: 100%;
+    }
+    .container-jobs
+    {
+        justify-content: space-between;
+    }
+    .jobs-button
+    {
+        padding: 10px 40px;
+    }
+    .leo-skills
+    {
+        padding: 0 20px;
+    }
+    .leo-skills-left,
+    .leo-skills-right
+    {
+        width: 40%;
+    }
+    .leo-skills figure
+    {
+        width: 20%;
+    }
+    .leo-img
+    {
+        width: 100%;
+        height: auto;
+    }
+    .leo-skills-left [class*="row-"] span
+    {
+        margin: 0;
+        margin-right: 20px;
+        font-size: 1em;
+    }
+    .leo-skills-right [class*="row-"] span
+    {
+        margin: 0;
+        margin-left: 20px;
+        font-size: 1em;
+    }
+    .contact-left,
+    .contact-right
+    {
+        width: auto;
+    }
+    .contact-links.twitter,
+    .contact-links.facebook,
+    .contact-links.github,
+    .contact-links.instagram
+    {
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .hero-img
+    {
+        height: 50vh;
+    }
+    .header figure
+    {
+        width: 200px;
+    }
+    .hero h1
+    {
+        font-size: 35px;
+    }
+    .project
+    {
+        align-items: center;
+    }
+    .menu,
+    .portafolio,
+    .experience,
+    .project,
+    .jobs,
+    .leo-skills-left [class*="row-"],
+    .leo-skills-right [class*="row-"],
+    .contact-title,
+    .contact form
+    {
+        font-size: 14px;
+    }
+    .jobs-title
+    {
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .hero-img
+    {
+        height: 85vh;
+    }
+    .hero h1
+    {
+        font-size: 30px;
+    }
+    .project
+    {
+        flex-direction: column;
+    }
+    .project .project-details,
+    .project figure
+    {
+        width: auto;
+    }
+    .jobs
+    {
+        width: 100%;
+    }
+    .jobs img
+    {
+        height: 300px;
+    }
+    .leo-skills-right
+    {
+        align-items: flex-start;
+    }
+    .leo-skills-left
+    {
+        align-items: flex-end
+    }
+    .leo-skills-left [class*="row-"],
+    .leo-skills-right [class*="row-"]
+    {
+        font-size: 12px;
+    }
+    .footer
+    {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:700px)
+{
+    .leo-skills
+    {
+        height: 50vh;
+        position: relative;
+    }
+    .leo-skills-left
+    {
+        display: none;
+    }
+    .leo-skills-right
+    {
+        width: 100%;
+        position: relative;
+        align-items: initial;
+    }
+    .leo-skills-right div:nth-child(2)
+    {
+        justify-content: flex-start;
+        margin-left: 10%;
+    }
+    .leo-skills-right div:nth-child(6)
+    {
+        justify-content: flex-end;
+        margin-right:10%;
+    }
+    .leo-skills figure
+    {
+        width: auto;
+    }
+    .leo-img
+    {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        bottom: 0;
+    }
+    .contact
+    {
+        flex-direction: column;
+    }
+    .contact-left,
+    .contact-right
+    {
+        width: 100%;
+    }
+    .contact input[type=submit]
+    {
+        align-self: center;
+    }
+    .contact-right
+    {
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+    .contact-right a:first-child
+    {
+        margin: 0;
+    }
+    .contact form
+    {
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width:650px)
+{
+    .hero
+    {
+        position: relative;
+    }
+    .hero h1
+    {
+        position: absolute;
+        z-index: 1;
+        background: rgba(0,0,0, .8);
+        padding: 10px;
+        border-radius: 5px;
+        margin:0 40px;
+    }
+    .hero-img
+    {
+        clip-path: initial;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width:480px)
+{
+    .header
+    {
+        /* flex-direction: column; */
+        height: 10vh;
+        position: fixed;
+        width: 100vw;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .header figure
+    {
+        height: inherit;
+    }
+    .logo
+    {
+        object-fit: contain;
+    }
+    .menu ul
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu
+    {
+        height: 90vh;
+        background: #232c33;
+        position: inherit;
+        width: 50%;
+        bottom: 0;
+        left: -60vw;
+        box-shadow: -2px 7px 18px 0px rgba(0,0,0,1);
+        transition: .3s;
+    }
+    .menu.is-active
+    {
+        left: 0;
+    }
+    .menu-icono
+    {
+        display: inline-block;
+    }
+    .menu ul
+    {
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .menu ul li,
+    .menu-link
+    {
+        height: initial;
+    }
+    .menu .menu-items:last-child .menu-link
+    {
+        margin: 0;
+    }
+    .project,
+    .container-jobs
+    {
+        margin: 0 20px 30px 20px;
+    }
+    .experience
+    {
+        height: fit-content;
+    }
+    .portafolio,
+    .experience,
+    .project,
+    .jobs,
+    .leo-skills-left [class*="row-"],
+    .leo-skills-right [class*="row-"],
+    .contact-title,
+    .contact form,
+    .footer p
+    {
+        font-size: 13px;
+    }
+    .contact-links.twitter,
+    .contact-links.facebook,
+    .contact-links.github,
+    .contact-links.instagram
+    {
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+        background-repeat: no-repeat;
+    }
+    .footer-img
+    {
+        height: 25px;
+    }
+    .footer div
+    {
+        text-align: center;
+    }
+    .punto {
+        height: 30px;
+        width: 60px;
+        margin-left: -30px;
+        margin-right: 15px;
+        position: relative;
+        left: -5px;
+    }
+}
+@media screen and (max-width: 320px)
+{
+    /* .punto
+    {
+        height: 20px;
+        width: 40px;
+        margin-left: -25px;
+        margin-right: 10px;
+    } */
+
+
+
+    .hero h1
+    {
+        font-size: 20px;
+    }
+    .section-title,
+    .contact .section-title
+    {
+        font-size: 1.3em;
+    }
+    .jobs img
+    {
+        height: 200px;
+    }
+    .portafolio,
+    .experience,
+    .project,
+    .jobs,
+    .leo-skills-left [class*="row-"],
+    .leo-skills-right [class*="row-"],
+    .contact-title,
+    .contact form,
+    .footer p
+    {
+        font-size: 12px;
+    }
 }
